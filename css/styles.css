@@ -1,3 +1,372 @@
+@media screen and (min-width: 200px) and (max-width: 704px) {
+  .thing {
+    color: pink; } }
+@media screen and (min-width: 705px) and (max-width: 1125px) {
+  .thing {
+    color: purple; } }
+/* Layouts and disign classes
+///////////////////////////////////////////////////////////////// */
+.inline {
+  display: inline-block;
+  position: relative;
+  float: none; }
 
+.inline-children li {
+  display: inline-block;
+  position: relative; }
+
+.block {
+  display: block;
+  position: relative; }
+
+.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 500;
+  background-color: white; }
+
+.absolute-bottom-right {
+  position: absolute;
+  bottom: 7px;
+  right: 10px; }
+
+.absolute-top-right {
+  position: absolute;
+  top: 5px;
+  right: 7px; }
+
+.absolute-top-left {
+  position: absolute;
+  top: 5px;
+  left: 5px; }
+
+.absolute-top {
+  position: absolute;
+  top: 0px; }
+
+.hide-ovrflw {
+  overflow: hidden; }
+
+.ovrflw-x {
+  overflow-x: scroll;
+  overflow-y: hidden; }
+
+.ovrflw-y {
+  overflow-y: scroll; }
+
+.shadow {
+  -webkit-box-shadow: 0px 1px 7px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 7px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 7px 2px rgba(0, 0, 0, 0.75); }
+
+.float-right {
+  float: right; }
+
+.float-left {
+  float: left; }
+
+.float-right-children li {
+  float: right; }
+
+.float-left-children li {
+  float: left; }
+
+.clear-right {
+  clear: right; }
+
+.clear-left {
+  clear: left; }
+
+.no-decoration {
+  list-style-type: none; }
+
+.no-underline {
+  text-decoration: none; }
+
+.borderBlack {
+  border-left: 1px solid #666666; }
+
+/* Padding classes
+///////////////////////////// */
+.no-padding {
+  padding: 0; }
+
+.sm-padding {
+  padding: 3px; }
+
+.med-padding {
+  padding: 10px; }
+
+.lg-padding {
+  padding: 20px; }
+
+.xlg-padding {
+  padding: 40px; }
+
+.sm-padding-left {
+  padding-left: 3px; }
+
+.med-padding-left {
+  padding-left: 10px; }
+
+.lg-padding-left {
+  padding-left: 20px; }
+
+.sm-padding-right {
+  padding-right: 3px; }
+
+.med-padding-right {
+  padding-right: 10px; }
+
+.lg-padding-right {
+  padding-right: 20px; }
+
+.sm-padding-top {
+  padding-top: 3px; }
+
+.med-padding-top {
+  padding-top: 10px; }
+
+.lg-padding-top {
+  padding-top: 20px; }
+
+.sm-padding-bottom {
+  padding-bottom: 3px; }
+
+.med-padding-bottom {
+  padding-bottom: 10px; }
+
+.lg-padding-bottom {
+  padding-bottom: 20px; }
+
+/* Margin classes
+///////////////////////////// */
+.no-margin {
+  margin: 0; }
+
+.sm-margin {
+  margin: 3px; }
+
+.med-margin {
+  margin: 10px; }
+
+.lg-margin {
+  margin: 20px; }
+
+.sm-margin-left {
+  margin-left: 3px; }
+
+.med-margin-left {
+  margin-left: 10px; }
+
+.lg-margin-left {
+  margin-left: 20px; }
+
+.sm-margin-right {
+  margin-right: 3px; }
+
+.med-margin-right {
+  margin-right: 10px; }
+
+.lg-margin-right {
+  margin-right: 20px; }
+
+.sm-margin-top {
+  margin-top: 3px; }
+
+.med-margin-top {
+  margin-top: 10px; }
+
+.lg-margin-top {
+  margin-top: 20px; }
+
+.sm-margin-bottom {
+  margin-bottom: 3px; }
+
+.med-margin-bottom {
+  margin-bottom: 10px; }
+
+.lg-margin-bottom {
+  margin-bottom: 20px; }
+
+.wide {
+  width: 100%; }
+
+.high {
+  height: 100%; }
+
+.super-high {
+  height: 236px; }
+
+.full-height {
+  height: 820px; }
+
+/* Text Layout Class
+///////////////////////////// */
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
+/* Text weight and size Class
+///////////////////////////// */
+.theFont {
+  font-family: "Covered By Your Grace", cursive; }
+
+.light {
+  font-weight: 300; }
+
+.medium {
+  font-wieght: 400; }
+
+.heavy {
+  font-weight: 600; }
+
+.v-small {
+  font-size: 11px; }
+
+.med {
+  font-size: 14px; }
+
+.tall {
+  font-size: 24px; }
+
+.v-tall {
+  font-size: 34px; }
+
+.vv-tall {
+  font-size: 60px; }
+
+.text-shadow {
+  text-shadow: 2px 2px #000000; }
+
+.filter-black {
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: ease 0.3s; }
+
+.filter-black:hover {
+  background-color: transparent; }
+
+/* Font Color classes
+///////////////////////////// */
+.cl-green {
+  color: #229955; }
+
+.cl-green-hover:hover {
+  color: #19703e; }
+
+.cl-blue {
+  color: #1F4A6F; }
+
+.cl-blue-hover:hover {
+  color: #142f47; }
+
+.cl-dk-green {
+  color: #19703e; }
+
+.cl-grey {
+  color: white;
+  transition: ease 0.3s; }
+
+.cl-grey-hover:hover {
+  color: #e6e6e6; }
+
+.cl-black {
+  color: black; }
+
+.cl-black-hover:hover {
+  color: black; }
+
+.cl-red {
+  color: #BD0006; }
+
+.cl-red-hover:hover {
+  color: #8a0004; }
+
+.cl-orange {
+  color: #FF6600; }
+
+.cl-orange-hover:hover {
+  color: #cc5200; }
+
+/* Background Color classes
+///////////////////////////// */
+.bg-yellow {
+  background-color: #F2B705; }
+
+.bg-green {
+  background-color: #229955; }
+
+.bg-green-light {
+  background-color: rgba(39, 174, 96, 0.3); }
+
+.bg-green-hover:hover {
+  background-color: #19703e; }
+
+.bg-blue {
+  background-color: #1F4A6F; }
+
+.bg-blue-hover:hover {
+  background-color: #142f47; }
+
+.bg-blue-shade {
+  background-color: rgba(31, 74, 111, 0.6); }
+
+.bg-dk-green {
+  background-color: #19703e; }
+
+.bg-grey {
+  background-color: white; }
+
+.bg-grey-hover:hover {
+  background-color: #e6e6e6; }
+
+.bg-black {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.bg-white {
+  background-color: rgba(255, 255, 255, 0.15); }
+
+.bg-black-hover:hover {
+  background-color: #1a1a1a; }
+
+.bg-red {
+  background-color: #BD0006; }
+
+.bg-red-light {
+  background-color: rgba(189, 0, 6, 0.3); }
+
+.bg-red-hover:hover {
+  background-color: #8a0004; }
+
+.bg-orange {
+  background-color: #FF6600; }
+
+.bg-orange-hover:hover {
+  background-color: #cc5200; }
+
+/* Element Styles
+///////////////////////////////////////////////////////////////// */
+/* ng-View Design
+///////////////////// */
+.transition1 {
+  transition: ease 1.5s; }
+
+/* Responsive Design
+///////////////////////////////////////////////////////////////// */
+@media screen and (min-width: 200px) and (max-width: 704px) {
+  .thing {
+    color: pink; } }
+@media screen and (min-width: 705px) and (max-width: 1125px) {
+  .thing {
+    color: purple; } }
+/* Large devices (large desktops, 1126px and up) */
+@media all and (min-width: 1126px) {
+  .thing {
+    color: yellow; } }
 
 /*# sourceMappingURL=styles.css.map */

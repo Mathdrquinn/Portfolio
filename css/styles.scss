@@ -1,0 +1,394 @@
+@import 'small';
+@import 'medium';
+
+$green: darken(#27ae60, 5%);
+$orange: #FF6600;
+$blue: #1F4A6F;
+$grey: white;
+$red: #BD0006;
+$black: black;
+$yellow: #F2B705;
+$font: "Lucida Grande", Helvetica, Arial, sans-serif;
+$theFont: 'Covered By Your Grace', cursive;
+
+/* Layouts and disign classes
+///////////////////////////////////////////////////////////////// */
+.inline {
+  display: inline-block;
+  position: relative;
+  float: none;
+}
+.inline-children {
+  li {
+    display: inline-block;
+    position: relative;
+  }
+}
+.block {
+  display: block;
+  position: relative;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  z-index:500;
+  background-color: rgba(255, 255, 255, 1);
+}
+.absolute-bottom-right {
+  position: absolute;
+  bottom: 7px;
+  right: 10px;
+}
+.absolute-top-right {
+  position: absolute;
+  top:5px;
+  right: 7px;
+}
+.absolute-top-left {
+  position: absolute;
+  top:5px;
+  left: 5px;
+}
+.absolute-top {
+  position: absolute;
+  top:0px;
+}
+.hide-ovrflw {
+  overflow: hidden;
+}
+.ovrflw-x {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.ovrflw-y {
+  overflow-y: scroll;
+}
+.shadow {
+  -webkit-box-shadow: 0px 1px 7px 2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 1px 7px 2px rgba(0,0,0,0.75);
+  box-shadow: 0px 1px 7px 2px rgba(0,0,0,0.75);
+}
+.float-right {
+  float: right;
+}
+.float-left {
+  float: left;
+}
+.float-right-children {
+  li {
+    float: right;
+  }
+}
+.float-left-children {
+  li {
+    float: left;
+  }
+}
+.clear-right {
+  clear:right;
+}
+.clear-left {
+  clear: left;
+}
+.no-decoration {
+  list-style-type: none;
+}
+.no-underline {
+  text-decoration: none;
+}
+.borderBlack {
+  border-left: 1px solid lighten($black, 40%);
+}
+
+/* Padding classes
+///////////////////////////// */
+.no-padding {
+  padding:0;
+}
+.sm-padding {
+  padding: 3px;
+}
+.med-padding {
+  padding: 10px;
+}
+.lg-padding {
+  padding: 20px;
+}
+.xlg-padding {
+  padding: 40px;
+}
+.sm-padding-left {
+  padding-left: 3px;
+}
+.med-padding-left {
+  padding-left: 10px;
+}
+.lg-padding-left {
+  padding-left: 20px;
+}
+.sm-padding-right {
+  padding-right: 3px;
+}
+.med-padding-right {
+  padding-right: 10px;
+}
+.lg-padding-right {
+  padding-right: 20px;
+}
+.sm-padding-top {
+  padding-top: 3px;
+}
+.med-padding-top {
+  padding-top: 10px;
+}
+.lg-padding-top {
+  padding-top: 20px;
+}
+.sm-padding-bottom {
+  padding-bottom: 3px;
+}
+.med-padding-bottom {
+  padding-bottom: 10px;
+}
+.lg-padding-bottom {
+  padding-bottom: 20px;
+}
+
+/* Margin classes
+///////////////////////////// */
+.no-margin {
+  margin: 0;
+}
+.sm-margin {
+  margin: 3px;
+}
+.med-margin {
+  margin: 10px;
+}
+.lg-margin {
+  margin: 20px;
+}
+.sm-margin-left {
+  margin-left: 3px;
+}
+.med-margin-left {
+  margin-left: 10px;
+}
+.lg-margin-left {
+  margin-left: 20px;
+}
+.sm-margin-right {
+  margin-right: 3px;
+}
+.med-margin-right {
+  margin-right: 10px;
+}
+.lg-margin-right {
+  margin-right: 20px;
+}
+.sm-margin-top {
+  margin-top: 3px;
+}
+.med-margin-top {
+  margin-top: 10px;
+}
+.lg-margin-top {
+  margin-top: 20px;
+}
+.sm-margin-bottom {
+  margin-bottom: 3px;
+}
+.med-margin-bottom {
+  margin-bottom: 10px;
+}
+.lg-margin-bottom {
+  margin-bottom: 20px;
+}
+.wide {
+  width:100%;
+}
+.high {
+  height: 100%;
+}
+.super-high {
+  height: 236px;
+}
+.full-height {
+  height: 820px;
+}
+
+/* Text Layout Class
+///////////////////////////// */
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+
+/* Text weight and size Class
+///////////////////////////// */
+.theFont {
+  font-family: $theFont;
+}
+.light {
+  font-weight: 300;
+}
+.medium {
+  font-wieght:400;
+}
+.heavy {
+  font-weight:600;
+}
+.v-small {
+  font-size: 11px;
+}
+.med {
+  font-size: 14px;
+}
+.tall {
+  font-size: 24px;
+}
+.v-tall {
+  font-size: 34px;
+}
+.vv-tall {
+  font-size: 60px;
+}
+.text-shadow {
+  text-shadow: 2px 2px #000000;
+}
+.filter-black {
+  background-color: rgba(0,0,0,0.3);
+  transition: ease 0.3s;
+}
+.filter-black:hover {
+  background-color: rgba(0,0,0,0.0);
+}
+
+/* Font Color classes
+///////////////////////////// */
+.cl-green {
+  color: $green;
+}
+.cl-green-hover:hover {
+  color: darken($green, 10%);
+}
+.cl-blue {
+  color: $blue;
+}
+.cl-blue-hover:hover {
+  color: darken($blue, 10%);
+}
+.cl-dk-green {
+  color: darken($green, 10%);
+}
+.cl-grey {
+  color: $grey;
+  transition: ease 0.3s;
+}
+.cl-grey-hover:hover {
+  color: darken($grey, 10%);
+}
+.cl-black {
+  color: $black;
+}
+.cl-black-hover:hover {
+  color: $black;
+}
+.cl-red {
+  color: $red;
+}
+.cl-red-hover:hover {
+  color: darken($red, 10%);
+}
+.cl-orange {
+  color: $orange;
+}
+.cl-orange-hover:hover {
+  color: darken($orange, 10%);
+}
+
+/* Background Color classes
+///////////////////////////// */
+.bg-yellow {
+  background-color: $yellow;
+}
+.bg-green {
+  background-color: $green;
+}
+.bg-green-light {
+  background-color: rgba(39, 174, 96, 0.3);
+}
+.bg-green-hover:hover {
+  background-color: darken($green, 10%);
+}
+.bg-blue {
+  background-color: $blue;
+}
+.bg-blue-hover:hover {
+  background-color: darken($blue, 10%);
+}
+.bg-blue-shade {
+  background-color: rgba(31, 74, 111, 0.6);
+}
+.bg-dk-green {
+  background-color: darken($green, 10%);
+}
+.bg-grey {
+  background-color: $grey;
+}
+.bg-grey-hover:hover {
+  background-color: darken($grey, 10%);
+}
+.bg-black {
+  background-color: rgba(0,0,0,0.5);
+}
+.bg-white {
+  background-color: rgba(255,255,255,0.15);
+}
+.bg-black-hover:hover {
+  background-color: lighten($black, 10%);
+}
+.bg-red {
+  background-color: $red;
+}
+.bg-red-light {
+  background-color: rgba(189, 0, 6, 0.3);
+}
+.bg-red-hover:hover {
+  background-color: darken($red, 10%);
+}
+.bg-orange {
+  background-color: $orange;
+}
+.bg-orange-hover:hover {
+  background-color: darken($orange, 10%);
+}
+/* Element Styles
+///////////////////////////////////////////////////////////////// */
+
+
+/* ng-View Design
+///////////////////// */
+
+.transition1 {
+  transition: ease 1.5s;
+}
+
+
+
+/* Responsive Design
+///////////////////////////////////////////////////////////////// */
+
+@import 'small';
+
+
+@import 'medium';
+
+
+@import 'large';
+
