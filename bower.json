@@ -1,0 +1,32 @@
+{
+  "name": "Portfolio",
+  "version": "0.0.0",
+  "description": "Brandan's Portfolio",
+  "keywords": [
+    "Brendan",
+    "Quinn",
+    "Portfolio",
+    "mathdrquinn"
+  ],
+  "authors": [
+    "Brendan Quinn <quinn.197@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.4.5",
+    "jquery": "~2.1.1",
+    "moment": "~2.8.3",
+    "lodash": "~2.4.1",
+    "modernizer": "~2.8.2",
+    "font-awesome": "~4.2.0"
+  }
+}
