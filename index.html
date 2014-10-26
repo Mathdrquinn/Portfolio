@@ -14,15 +14,29 @@
 </head>
 <body>
 
+<div id="social-bar" class="fixed">
+    <ul class="no-margin no-padding inline">
+        <li class="no-margin no-padding med-padding inline social"><a href="https://twitter.com/MathDrQuinn" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
+        <br/>
+        <li class="no-margin no-padding med-padding inline social"><a href="https://www.linkedin.com/profile/view?id=277939519&trk=nav_responsive_tab_profile" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a></li>
+        <br/>
+        <li class="no-margin no-padding med-padding inline social"><a href="https://github.com/Mathdrquinn" target="_blank"><i class="fa fa-github fa-lg"></i></a></li>
+        <br/>
+        <li class="no-margin no-padding med-padding inline social"><a href="mailto:quinn.197@gmail.com"><i class="fa fa-envelope fa-lg"></i></a></li>
+        <br/>
+        <li class="no-margin no-padding med-padding inline social"><a href="https://mathdrquinn.wordpress.com/" target="_blank"><i class="fa fa-wordpress fa-lg"></i></a></li>
+    </ul>
+</div>
 
 
-<nav class="top-bar" data-topbar>
+
+<nav class="top-bar bg-dark1" data-topbar>
     <ul class="title-area">
 
         <li class="name">
             <h1>
                 <a href="#">
-                    Top Bar Title
+                    Brendan Quinn
                 </a>
             </h1>
         </li>
@@ -33,44 +47,14 @@
 
         <ul class="right">
             <li class="divider"></li>
-            <li class="has-dropdown">
-                <a href="#">Main Item 1</a>
-                <ul class="dropdown">
-                    <li><label>Section Name</label></li>
-                    <li class="has-dropdown">
-                        <a href="#" class="">Has Dropdown, Level 1</a>
-                        <ul class="dropdown">
-                            <li><a href="#">Dropdown Options</a></li>
-                            <li><a href="#">Dropdown Options</a></li>
-                            <li><a href="#">Level 2</a></li>
-                            <li><a href="#">Subdropdown Option</a></li>
-                            <li><a href="#">Subdropdown Option</a></li>
-                            <li><a href="#">Subdropdown Option</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Dropdown Option</a></li>
-                    <li><a href="#">Dropdown Option</a></li>
-                    <li class="divider"></li>
-                    <li><label>Section Name</label></li>
-                    <li><a href="#">Dropdown Option</a></li>
-                    <li><a href="#">Dropdown Option</a></li>
-                    <li><a href="#">Dropdown Option</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">See all →</a></li>
-                </ul>
+            <li>
+                <a id="resume" href="#" class="bottom-border padding-wide">Resume</a>
             </li>
             <li class="divider"></li>
-            <li><a href="#">Main Item 2</a></li>
+            <li class=""><a id="portfolio"  href="#" class="bottom-border padding-wide">Portfolio of Work</a></li>
             <li class="divider"></li>
-            <li class="has-dropdown">
-                <a href="#">Main Item 3</a>
-                <ul class="dropdown">
-                    <li><a href="#">Dropdown Option</a></li>
-                    <li><a href="#">Dropdown Option</a></li>
-                    <li><a href="#">Dropdown Option</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">See all →</a></li>
-                </ul>
+            <li class="">
+                <a href="https://github.com/Mathdrquinn" class="bottom-border padding-wide">Github</a>
             </li>
         </ul>
     </section>
@@ -78,126 +62,312 @@
 
 
 
-<div class="row">
+<div class="row container">
     <div class="large-12 columns">
 
+        <div class="row sprawl">
+            <div id="banner" class="large-12">
+                <img src="images/banner.jpg" alt="Beautiful Picture of Brendan Quinn, the person you want to hire."/>
 
-
-        <div class="row">
-            <div class="large-12 hide-for-small">
-
-                <div id="featured" data-orbit>
-                    <img class="orbitImage" src="images/portfolio3.jpg" alt="slide image">
-                    <img class="orbitImage" src="images/portfolio2.jpg" alt="slide image">
-                    <img class="orbitImage" src="images/portfolio1.jpg" alt="slide image">
+                <div class="bubble">
+                    hello and welcome,
+                    <br/>
+                    I'm an energetic introvert with a love of family, walking/hiking, kayaking, listening, teaching, and of course, code.
                 </div>
-
             </div>
+            <div id="stats" class="row bg-dark1 cl-white no-margin">
+                <div id="headshotDiv" class="large-3 medium-3 column">
+                    <img id="headshot" src="images/boat-headshot.jpg" alt="Head shot of Brendan Quinn">
+                </div>
+                <div  id="statsDiv" class="large-9 medium-9 column">
+                    <ul id="statsList" class="no-margin no-padding">
+                        <li id="repos" class="no-margin inline stat">Repositories<p><a href="#"><i class="fa fa-spinner fa-spin"></i></a></p></li>
+                        <li id="commits" class="no-margin inline stat">Commits<p><a href="#"><i class="fa fa-spinner fa-spin"></i></a></p></li>
+                        <li id="js" class="no-margin inline stat">Lines of JS <p><a href="#"><i class="fa fa-spinner fa-spin"></i></a></p></li>
+                        <li id="css" class="no-margin inline stat">Lines of CSS<p><a href="#"><i class="fa fa-spinner fa-spin"></i></a></p></li>
+                    </ul>
+                </div>
+            </div>
+            <!--<div class="large-12 hide-for-small">-->
+
+                <!--<div id="featured" data-orbit>-->
+                    <!--<img class="orbitImage" src="images/portfolio3.jpg" alt="slide image">-->
+                    <!--<img class="orbitImage" src="images/portfolio2.jpg" alt="slide image">-->
+                    <!--<img class="orbitImage" src="images/portfolio1.jpg" alt="slide image">-->
+                <!--</div>-->
+            <!--</div>-->
         </div>
 
+        <div class="row content">
+            <div class="large-12 columns no-padding">
+                <div id="resumeDoc" class="row">
+                    <h1>Brendan Quinn</h1>
+                    <h5>8780 Yearling Dr. Apt 11E <br/> North. Charleston, SC 29406</h5>
+                    <h5 style="border-bottom: 1px solid grey; padding-bottom: 20px">quinn.197@gmail.com | (614) 905-2413</h5>
+                    <h3 class="med-margin-top">Education</h3>
+                    <h6><strong>Graduate of The Iron Yard Academy, Charleston</strong></strong> <span class="float-right">October 2014</span></h6>
+                    <ul class="no-padding">
+                        <li class="no-margin no-padding">An immersive course in front end engineering.  Developed skills in building fast, production quality applications with responsive, robust, and beautiful interfaces.</li>
+                        <li class="no-margin no-padding"><em>Focuses</em>: AngualrJS, Sass, Foundation/Bootstrap, HTML CSS, Javascript</li>
+                    </ul>
+                    <h6><strong>Bachelor of Science in Education</strong><span class="float-right">May 2012</span></h6>
+                    <ul class="no-padding">
+                        <li class="no-margin-no-padding">Butler University, Indianapolis, IN</li>                    </li>
+                        <li class="no-margin-no-padding"><em>Major</em>: Middle and Secondary Education
 
+                        </li>
+                        <li class="no-margin-no-padding"><em>Minor</em>: Mathematics</li>
+                        <li class="no-margin-no-padding"><em>GPA</em>: 3.79/4.0                        </li>
+                    </ul>
+                    <p>Honors: ETS Recognition of Excellence for Mathematics Content Knowledge, Butler University Presidential Scholarship, Blue Key Honors Society, Student speaker at Butler University’s Baccalaureate ceremony</p>
+                    <h3>Skills</h3>
+                    <div class="row">
+                        <div class="large-4 medium-4 column">
+                            <ul class="no-padding">
+                                <li class="no-padding no-margin">AngularJS</li>
+                                <li class="no-padding no-margin">jQuery</li>
+                                <li class="no-padding no-margin">Bower</li>
+                                <li class="no-padding no-margin">Twitter Bootstrap</li>
+                                <li class="no-padding no-margin">HTML5</li>
+                            </ul>
+                        </div>
+                        <div class="large-4 medium-4 column">
+                            <ul class="no-padding">
+                                <li class="no-padding no-margin">JavaScript</li>
+                                <li class="no-padding no-margin">Node</li>
+                                <li class="no-padding no-margin">Yeoman</li>
+                                <li class="no-padding no-margin">Sass</li>
+                                <li class="no-padding no-margin">Geolocation</li>
+                            </ul>
+                        </div>
+                        <div class="large-4 medium-4 column">
+                            <ul class="no-padding">
+                                <li class="no-padding no-margin">Ajax</li>
+                                <li class="no-padding no-margin">NPM</li>
+                                <li class="no-padding no-margin">Foundation</li>
+                                <li class="no-padding no-margin">CSS</li>
+                                <li class="no-padding no-margin">Git Verson Control</li>
+                            </ul>
+                        </div>
+                    </div>
 
-
-
-        <div class="row">
-            <div class="large-12 columns show-for-small">
-
-                <img src="images/portfolioMobile.jpeg">
-
-            </div>
-        </div><br>
-
-
-
-
-        <div class="row">
-            <div class="large-12 columns">
+                    <h3>Work Experience</h3>
+                    <h6><strong>Mathematics Teacher</strong><span class="float-right">Aug 2012 – June 2014</span></h6>
+                    <p class="">Northwoods Middle School, North Charleston SC</p>
+                    <ul class="no-padding">
+                        <li class="no-margin no-padding">Learned and practiced the value of flexibility in a high demand work environment.
+                        </li>
+                        <li class="no-margin no-padding">Avid adapter of new strategies and concepts through Personal Learning Communities and professional development trainings.
+                        </li>
+                        <li class="no-margin no-padding">Created a student-focused classroom environment and atmosphere
+                        </li>
+                        <li class="no-margin no-padding">2012-2013 Northwoods Middle School rookie teacher of the year.
+                        </li>
+                        <li class="no-margin no-padding">February 2014 Charleston County School District Teacher of the Month
+                        </li>
+                        <li class="no-margin no-padding">Model Classroom for the Re-Inventing Schools Coalition (RISC), Team Leader, Springboard Curriculum Head (2014)
+                        </li>
+                        <li class="no-margin no-padding">Head of Common Core Curriculum Implementation Team (2013) where I unwrapped an new curriculum with cooleagues
+                        </li>
+                    </ul>
+                    <h6><strong>Mathematics Student Teacher</strong><span class="float-right">Jan 2012 – May 2012</span></h6>
+                    <p class="">Carmel High School, Carmel, IN and Chapel Hill Middle School 7th and 8th grade center, Indianapolis, IN</p>
+                    <ul class="no-padding">
+                        <li class="no-margin no-padding">Developed skills as a public speaker and moderator of new information</li>
+                        <li class="no-margin no-padding">Engaged in a self-reflective environment among veteran teachers and administrators to develop thoughtful professional practices</li>
+                    </ul>
+                </div>
                 <div class="row">
 
-                    <div class="large-4 small-6 columns">
+                    <div class="large-8 small-12 columns no-padding med-margin-top">
 
-                        <h4 class="thing">Contact Information</h4><hr>
+                        <section id="cd-timeline" class="lg-margin-right cd-timeline">
 
-                        <div class="row">
-                            <!--<div class="large-1 column">-->
-                                <!--<img src="http://placehold.it/50x50&text=[img]">-->
-                            <!--</div>-->
+                            <div class="cd-timeline-block timeCard no-margin">
+                                <div class="cd-timeline-img">
+                                    <span class=""> <i class="fa fa-birthday-cake"></i> </span>
+                                </div> <!-- cd-timeline-img -->
 
-                            <div class="large-9 columns text-center">
-                                <h5><a href="https://github.com/Mathdrquinn" target="_blank"><i class="fa fa-github fa-lg"></i>&nbspGithub</a></h5>
-                                <h6 class="subheader show-for-small">Doors at 00:00pm</h6>
+                                <div class="cd-timeline-content">
+                                    <h2>Birth of My Son</h2>
+                                    <p>At 8lbs, 6oz and 21in, my family welcomed <em>Kevin Richard Quinn</em> into our awesome world.</p>
+                                    <span class="cd-date">Oct 14</span>
+                                </div> <!-- cd-timeline-content -->
+                            </div> <!-- cd-timeline-block -->
+
+                            <div class="cd-timeline-block timeCard is-hidden">
+                                <div class="cd-timeline-img is-hidden">
+                                    <span class=""> <i class="fa fa-graduation-cap"></i> </span>
+                                </div> <!-- cd-timeline-img -->
+
+                                <div class="cd-timeline-content">
+                                    <h2>The Iron Yard - Charleston</h2>
+                                    <p>Graduated from TIY as a front-end engineer with back-end capabilities.  An absolutely amazing experience and change of course.
+                                        <br/>
+                                        All course projects are posted to my github account.
+                                    </p>
+                                    <a href="https://github.com/mathdrquinn" class="cd-read-more">MathDrQuinn's Github</a>
+                                    <span class="cd-date">Feb 14</span>
+                                </div> <!-- cd-timeline-content -->
+                            </div> <!-- cd-timeline-block -->
+
+                            <div class="cd-timeline-block timeCard is-hidden">
+                                <div class="cd-timeline-img is-hidden">
+                                    <span class=""> <i class="fa fa-plug"></i> </span>
+                                </div> <!-- cd-timeline-img -->
+
+                                <div class="cd-timeline-content">
+                                    <h2>Hackathon 4 - SPARC</h2>
+                                    <p>Competed in my first Hakathon.  If you have never attended a SPARC hackathon, its a must.</p>
+                                    <a href="http://hackathon.sparcedge.com/front-page/" class="cd-read-more">Read More</a>
+                                    <span class="cd-date">Aug 14</span>
+                                </div> <!-- cd-timeline-content -->
+                            </div> <!-- cd-timeline-block -->
+
+                            <div class="cd-timeline-block timeCard is-hidden">
+                                <div class="cd-timeline-img is-hidden">
+                                    <span><i class="fa fa-university"></i></span>
+                                </div> <!-- cd-timeline-img -->
+
+                                <div class="cd-timeline-content">
+                                    <h2>The Iron Yard - Charleston</h2>
+                                    <p>Enrolled as a front-end engineer</p>
+                                    <a href="http://theironyard.com/locations/charleston/" class="cd-read-more">Read more</a>
+                                    <span class="cd-date">Feb 14</span>
+                                </div> <!-- cd-timeline-content -->
+                            </div> <!-- cd-timeline-block -->
+
+                            <div class="cd-timeline-block timeCard is-hidden">
+                                <div class="cd-timeline-img is-hidden">
+                                    <span><i class="fa fa-trophy"></i></span>
+                                </div> <!-- cd-timeline-img -->
+
+                                <div class="cd-timeline-content">
+                                    <h2>Teacher of the Month, CCSD</h2>
+                                    <p>Was selected at Charleston County School District's teacher of the month.</p>
+                                    <a href="http://quinningpilgrims.blogspot.com/" class="cd-read-more">Read more</a>
+                                    <span class="cd-date">Feb 14</span>
+                                </div> <!-- cd-timeline-content -->
+                            </div> <!-- cd-timeline-block -->
+
+                            <div class="cd-timeline-block timeCard is-hidden">
+                                <div class="cd-timeline-img is-hidden">
+                                    <span><i class="fa fa-plane"></i></span>
+                                </div> <!-- cd-timeline-img -->
+
+                                <div class="cd-timeline-content">
+                                    <h2>Enlivening Travel</h2>
+                                    <p>At the epicenter of a month and a half long trip across the Atlantic, my wife and I hiked El Camino De Santiago, a 400 mile hike from Pamplona to Santiago, Spain.</p>
+                                    <a href="#0" class="cd-read-more">Read more</a>
+                                    <span class="cd-date">July 13</span>
+                                </div> <!-- cd-timeline-content -->
+                            </div> <!-- cd-timeline-block -->
+
+                            <div class="cd-timeline-block timeCard is-hidden">
+                                <div class="cd-timeline-img is-hidden">
+                                    <span><i class="fa fa-trophy"></i></span>
+                                </div> <!-- cd-timeline-img -->
+
+                                <div class="cd-timeline-content">
+                                    <h2>Rookie Teacher of the Year, NWMS</h2>
+                                    <p>Was voted as the rookie teacher of the year at Northwoods Middle School by my colleagues.</p>
+                                    <a href="#0" class="cd-read-more">Read more</a>
+                                    <span class="cd-date">May 2013</span>
+                                </div> <!-- cd-timeline-content -->
+                            </div> <!-- cd-timeline-block -->
+
+                            <div class="cd-timeline-block timeCard is-hidden">
+                                <div class="cd-timeline-img is-hidden">
+                                    <span><i class="fa fa-calculator"></i></span>
+                                </div> <!-- cd-timeline-img -->
+
+                                <div class="cd-timeline-content">
+                                    <h2>7th Grade Math Teacher</h2>
+                                    <p>Began my teaching carreer at Northwoods Middle School at a 7th grade math teacher.  I taught Math 7, Pre-Algebra, and Algebra.</p>
+                                    <a href="#0" class="cd-read-more">Read more</a>
+                                    <span class="cd-date">August 2012</span>
+                                </div> <!-- cd-timeline-content -->
+                            </div> <!-- cd-timeline-block -->
+
+                            <div class="cd-timeline-block timeCard is-hidden">
+                                <div class="cd-timeline-img is-hidden">
+                                    <span><i class="fa fa-truck"></i></span>
+                                </div> <!-- cd-timeline-img -->
+
+                                <div class="cd-timeline-content">
+                                    <h2>Moved to Charleston, SC</h2>
+                                    <p>My wife was place in Charleston through Teach for America, starting a great new chapter for us in the Low Country</p>
+                                    <a href="#0" class="cd-read-more">Read more</a>
+                                    <span class="cd-date">June 2012</span>
+                                </div> <!-- cd-timeline-content -->
+                            </div> <!-- cd-timeline-block -->
+
+                            <div class="cd-timeline-block timeCard is-hidden">
+                                <div class="cd-timeline-img is-hidden">
+                                    <span><i class="fa fa-institution sm-padding-top"></i></span>
+                                </div> <!-- cd-timeline-img -->
+
+                                <div class="cd-timeline-content">
+                                    <h2>Butler University</h2>
+                                    <p>Graduated <em>Cum Laude</em> with a Bachlors of Science in Educaiton with a minor in Mathematics</p>
+                                    <a href="#0" class="cd-read-more">Read more</a>
+                                    <span class="cd-date">May 2012</span>
+                                </div> <!-- cd-timeline-content -->
+                            </div> <!-- cd-timeline-block -->
+
+                        </section>
+
+                    </div> <!-- end timeline and image-->
+
+
+
+
+
+
+                    <div id="data-container" class="large-4 small-12 columns med-margin-top">
+
+                        <div id="blog" class="wide">
+                            <h4>Blog</h4><hr>
+                            <div class="blogPost" class="panel">
+                                <h5><a href="#">Blog</a></h5>
                             </div>
-                        </div><hr>
 
-                        <div class="hide-for-small">
-                            <div class="row">
-                                <!--<div class="large-1 column">-->
-                                    <!--<img src="http://placehold.it/50x50&text=[img]">-->
-                                <!--</div>-->
+                            <div class="panel hide-for-small">
+                                <h5><a href="#"><i class="fa fa-spinner fa-spin fa-5x"></i></a></h5>
+                            </div>
 
-                                <div class="large-9 columns text-center">
-                                    <h5 class="subheader"><a href="https://twitter.com/MathDrQuinn" target="_blank"><i class="fa fa-twitter-square fa-lg"></i>&nbspTwitter</a></h5>
-                                </div>
-                            </div><hr>
+                            <div class="panel hide-for-small">
+                                <h5><a href="#">Post Title 3 »</a></h5>
+                            </div>
 
-                            <div class="row">
-                                <!--<div class="large-1 column">-->
-                                    <!--<img src="http://placehold.it/50x50&text=[img]">-->
-                                <!--</div>-->
+                            <a href="#" class="text-center med-padding bg-blue bg-blue-hover wide">Go To Blog »</a>
+                        </div>
 
-                                <div class="large-9 columns text-center">
-                                    <h5 class="subheader"><a href="https://www.linkedin.com/profile/view?id=277939519&trk=nav_responsive_tab_profile"><i class="fa fa-linkedin-square fa-lg"></i>&nbspLinkIn</a></h5>
-                                </div>
-                            </div><hr>
+                        <div id="projects" class="wide bg-dark1">
 
-                            <div class="row">
-                                <!--<div class="large-1 column">-->
-                                    <!--<img src="http://placehold.it/50x50&text=[img]">-->
-                                <!--</div>-->
+                            <h3 class="ribbon"><strong class="ribbon-content">Project Snippet</strong></h3>
+                            <div class="project panel">
+                                <span class="block text-center"><img class="block" src="images/eat-to-bite-small.png" alt="Eat-to-Bite image"/></span>
+                                <h5 class="no-margin text-center med-padding">Eat-to-Bite</h5>
+                                <p>A MEAN stack web application made to help restauranteurs filter menu items based on dietary needs.</p>
 
-                                <div class="large-9 columns text-center">
-                                    <h5 class="subheader"><a href=""><i class="fa fa-envelope"></i>&nbspEmail</a></h5>
-                                </div>
+                                <p><a href="https://github.com/Mathdrquinn/eat-to-bite">SEE THE CODE</a></p>
+                            </div>
+                            <div class="project panel">
+                                <span class="block text-center"><img class="block" src="images/ironbook-small.png" alt="The IronBook image"/></span>
+                                <h5 class="no-margin text-center med-padding">IronBook</h5>
+                                <p>An AngularJS web app the provides an assortment of ways to quickly sort, filter, and view data inside of a beautiful interface</p>
+
+                                <p><a href="https://github.com/Mathdrquinn/IronBook">SEE THE CODE</a></p>
+                            </div>
+                            <div class="project panel">
+                                <span class="block text-center"><img class="block" src="images/chatter-small.png" alt="Chatter image"/></span>
+                                <h5 class="no-margin text-center med-padding">Chatter</h5>
+                                <p>A scalable AngularJS application that allows user to create chatrooms and converse with others!</p>
+
+                                <p><a href="https://github.com/Mathdrquinn/Chatter">SEE THE CODE</a></p>
                             </div>
                         </div>
-                    </div>
-
-
-
-
-
-                    <div class="large-4 small-6 columns">
-                        <img src="http://placehold.it/300x465&text=Image">
-                    </div>
-
-
-
-
-
-
-                    <div id="blog" class="large-4 small-12 columns">
-
-                        <h4>Blog</h4><hr>
-                        <div class="blogPost" class="panel">
-                            <h5><a href="#">Post Title 1</a></h5>
-
-                            <h6 class="subheader">
-                                Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Suspendisse ultrices ornare tempor...
-                            </h6>
-
-                            <h6><a href="#">Read More »</a></h6>
-                        </div>
-
-                        <div class="panel hide-for-small">
-                            <h5><a href="#">Post Title 2 »</a></h5>
-                        </div>
-
-                        <div class="panel hide-for-small">
-                            <h5><a href="#">Post Title 3 »</a></h5>
-                        </div>
-
-                        <a href="#" class="right">Go To Blog »</a>
-
                     </div>
 
 
@@ -213,22 +383,27 @@
 
         <footer class="row">
             <div class="large-12 columns"><hr>
-                <div class="row">
+                <div class="row text-center bg-dark1">
+                    <div class="large-3 medium-3 small-3 column">
+                        <p class="contactTitle">Email</p>
 
-                    <div class="large-6 columns">
-                        <p>© Copyright no one at all. Go to town.</p>
+                        <p class="contactInfo"><a href="">quinn.197@gmail.com</a></p>
                     </div>
+                    <div class="large-3 medium-3 small-3 column">
+                        <p class="contactTitle">Githib</p>
 
-                    <div class="large-6 small-12 columns">
-                        <ul class="inline-list right">
-                            <li><a href="#">Link 1</a></li>
-                            <li><a href="#">Link 2</a></li>
-                            <li><a href="#">Link 3</a></li>
-                            <li><a href="#">Link 4</a></li>
-                        </ul>
+                        <p class="contactInfo"><a href="https://github.com/Mathdrquinn">MathDrQuinn</a></p>
                     </div>
+                    <div class="large-3 medium-3 small-3 column">
+                        <p class="contactTitle">twitter</p>
 
-                </div>
+                        <p class="contactInfo"><a href="https://twitter.com/MathDrQuinn">@MathDrQuinn</a></p>
+                    </div>
+                    <div class="large-3 medium-3 small-3 column">
+                        <p class="contactTitle">Phone</p>
+
+                        <p class="contactInfo"><a href="#">(614) 905-2413</a></p>
+                    </div>
             </div>
         </footer>
 

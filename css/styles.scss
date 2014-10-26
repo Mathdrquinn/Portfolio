@@ -1,15 +1,14 @@
-@import 'small';
-@import 'medium';
-
-$green: darken(#27ae60, 5%);
-$orange: #FF6600;
+$secondary: #00989C;
+$primary: darken($secondary, 15%);
 $blue: #1F4A6F;
-$grey: white;
-$red: #BD0006;
-$black: black;
-$yellow: #F2B705;
+$dark1: #303A3B;
+$dark2: #475657;
+$black: #333333;
+$tirchiary: #819178;
 $font: "Lucida Grande", Helvetica, Arial, sans-serif;
 $theFont: 'Covered By Your Grace', cursive;
+
+@import 'ribbon';
 
 /* Layouts and disign classes
 ///////////////////////////////////////////////////////////////// */
@@ -30,9 +29,21 @@ $theFont: 'Covered By Your Grace', cursive;
 }
 .fixed {
   position: fixed;
-  top: 0;
+  top: 10%;
+  right:0px;
   z-index:500;
-  background-color: rgba(255, 255, 255, 1);
+}
+.hide {
+  display: none;
+}
+.is-hidden {
+  visibility: hidden;
+}
+.show-inline {
+  display: inline-block;
+}
+.show-block {
+  display: block;
 }
 .absolute-bottom-right {
   position: absolute;
@@ -96,8 +107,13 @@ $theFont: 'Covered By Your Grace', cursive;
 .no-underline {
   text-decoration: none;
 }
-.borderBlack {
-  border-left: 1px solid lighten($black, 40%);
+
+a {
+  color: lighten($blue, 5%);
+}
+
+a:hover {
+  color: $primary;
 }
 
 /* Padding classes
@@ -262,36 +278,39 @@ $theFont: 'Covered By Your Grace', cursive;
   text-shadow: 2px 2px #000000;
 }
 .filter-black {
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(33,33,33,0.3);
   transition: ease 0.3s;
 }
 .filter-black:hover {
-  background-color: rgba(0,0,0,0.0);
+  background-color: rgba(33,33,33,0.0);
 }
 
 /* Font Color classes
 ///////////////////////////// */
-.cl-green {
-  color: $green;
+
+.cl-primary {
+  color: $primary;
 }
-.cl-green-hover:hover {
-  color: darken($green, 10%);
+.cl-primary-hover:hover {
+  color: darken($primary, 10%);
 }
-.cl-blue {
-  color: $blue;
+.cl-secondary {
+  color: $secondary;
 }
-.cl-blue-hover:hover {
-  color: darken($blue, 10%);
+.cl-secondary-hover:hover {
+  color: darken($secondary, 10%);
 }
-.cl-dk-green {
-  color: darken($green, 10%);
+.cl-dark1 {
+  color: $dark1;
 }
-.cl-grey {
-  color: $grey;
-  transition: ease 0.3s;
+.cl-dark1-hover:hover {
+  color: lighten($dark1, 10%);
 }
-.cl-grey-hover:hover {
-  color: darken($grey, 10%);
+.cl-dark2 {
+  color: $dark2;
+}
+.cl-dark2-hover:hover {
+  color: lighten($dark2, 10%);
 }
 .cl-black {
   color: $black;
@@ -299,32 +318,38 @@ $theFont: 'Covered By Your Grace', cursive;
 .cl-black-hover:hover {
   color: $black;
 }
-.cl-red {
-  color: $red;
+.cl-blue {
+  color: $blue;
 }
-.cl-red-hover:hover {
-  color: darken($red, 10%);
+.cl-blue-hover:hover {
+  color: darken($blue, 10%);
 }
-.cl-orange {
-  color: $orange;
+.cl-tirchiary {
+  color: $tirchiary;
 }
-.cl-orange-hover:hover {
-  color: darken($orange, 10%);
+.cl-tirchiary-hover:hover {
+  color: darken($tirchiary, 10%);
+}
+.cl-white {
+  color: white;
 }
 
 /* Background Color classes
 ///////////////////////////// */
-.bg-yellow {
-  background-color: $yellow;
+
+/* $primary: #009C59;  $secondary: #00989C ;  $blue: #1F4A6F;  $dark1: #475657;  $dark2: #475657;  $black: #333333;  $tirchiary: #819178; */
+
+.bg-primary {
+  background-color: $primary;
 }
-.bg-green {
-  background-color: $green;
+.bg-primary:hover {
+  background-color: darken($primary, 10%);
 }
-.bg-green-light {
-  background-color: rgba(39, 174, 96, 0.3);
+.bg-secondary {
+  background-color: $secondary;
 }
-.bg-green-hover:hover {
-  background-color: darken($green, 10%);
+.bg-secondary:hover {
+  background-color: darken($secondary, 10%);
 }
 .bg-blue {
   background-color: $blue;
@@ -335,54 +360,496 @@ $theFont: 'Covered By Your Grace', cursive;
 .bg-blue-shade {
   background-color: rgba(31, 74, 111, 0.6);
 }
-.bg-dk-green {
-  background-color: darken($green, 10%);
+.bg-dark1 {
+  background-color: $dark1;
 }
-.bg-grey {
-  background-color: $grey;
+.bg-dark1-hover:hover {
+  background-color: lighten($dark1, 10%);
 }
-.bg-grey-hover:hover {
-  background-color: darken($grey, 10%);
+.bg-dark2 {
+  background-color: $dark2;
+}
+.bg-dark2:hover {
+  background-color: lighten($dark2, 10%);
 }
 .bg-black {
   background-color: rgba(0,0,0,0.5);
 }
 .bg-white {
+  background-color: rgba(255,255,255,1);
+}
+.bg-white-light {
   background-color: rgba(255,255,255,0.15);
 }
 .bg-black-hover:hover {
   background-color: lighten($black, 10%);
 }
-.bg-red {
-  background-color: $red;
+.bg-tirchiary {
+  background-color: $tirchiary;
 }
-.bg-red-light {
-  background-color: rgba(189, 0, 6, 0.3);
-}
-.bg-red-hover:hover {
-  background-color: darken($red, 10%);
-}
-.bg-orange {
-  background-color: $orange;
-}
-.bg-orange-hover:hover {
-  background-color: darken($orange, 10%);
+.bg-tirchiary-hover:hover {
+  background-color: darken($tirchiary, 10%);
 }
 /* Element Styles
 ///////////////////////////////////////////////////////////////// */
 
+body {
+  background-image: url(../images/congruent_pentagon.png);
+  #social-bar {
+    left: 95%;
+    width:60px;
+    float: right;
+    text-align: center;
+    top:47px;
+    a {
+      color: white;
+    }
+    .social {
+      padding-top:18px;
+      width:60px;
+      height:60px;
+    }
+    .social:hover {
+      background-color: darken($blue, 10%);
+    }
+  }
+  .top-bar {
+    position: fixed;
+    width:100%;
+    z-index:5;
+    height: 47px;
+    .padding-wide {
+      padding: 0px 35px !important;
+    }
+  }
+  .main {
+    br{
+      margin:0;
+    }
+  }
+}
 
-/* ng-View Design
-///////////////////// */
+#data-container {
+  background-color: white;
+  padding-right: 0;
+  padding-left: 0;
+  position: relative;
+  #blog {
+    right:0%;
+    .blogPost {
+      border: none;
+      background-color: rgba(225, 225, 225, 0.35);
+      h6 {
+        color: #333333;
+        a {
+          text-align: center;
+          display: block;
+          padding: 8px 15px;
+          background-color: lighten($blue, 5%);
+          font-size:12px;
+          color: white;
+        }
+      }
+    }
+    .blogPost:nth-child(2) {
+      padding-top: 60px;
+    }
+    .blogPost:nth-child(4) {
+      margin-bottom: 0;
+    }
+  }
+  #projects {
+    background-color:white;
+    position: relative;
+    right:0%;
+    .project {
+      border:none;
+      background-color: rgba(225, 225, 225, 0.35);
+      img {
+        margin: 0 auto;
+        width: 100%;
+      }
+      h5 {
+        text-align: center;
+        margin-bottom: 0;
+      }
+      h6 {
+        color: #333333;
+      }
+      p {
+        line-height: 1.1;
+      }
+      a {
+        text-align: center;
+        display: block;
+        padding: 8px 15px;
+        background-color: lighten($blue, 5%);
+        color: white;
+        font-size:12px;
+      }
+    }
+    .project:nth-child(2) {
+      padding-top: 64px;
+    }
+  }
+}
+
+nav {
+  .top-bar-section {
+    .right {
+      li {
+        a {
+          background-color: $dark1;
+        }
+        .bottom-border {
+          border-bottom: 2px solid $secondary;
+        }
+      }
+    }
+  }
+}
 
 .transition1 {
   transition: ease 1.5s;
 }
 
+.container {
+  width: 100%;
+  min-width: 100%;
+  #banner {
+    position: relative;
+    margin-top:47px;
+    img {
+
+    }
+/* Thanks to: http://ilikepixels.co.uk/drop/bubbler/ with help on making the quote bubble!!! */
+    .bubble
+    {
+      font-family: courier, monospace;
+      position: absolute;
+      top: 18%;
+      right:5%;
+      max-width: 40%;
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.3);
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+    }
+
+    .bubble:after
+    {
+      content: '';
+      position: absolute;
+      border-style: solid;
+      border-width: 10px 11px 10px 0;
+      border-color: transparent rgba(255, 255, 255, 0.2);
+      display: block;
+      width: 0;
+      z-index: 1;
+      left: -11px;
+      top: 5%;
+    }
+
+    .bubble:before
+    {
+      content: '';
+      position: absolute;
+      border-style: solid;
+      border-width: 10px 11px 10px 0;
+      border-color: transparent rgba(255, 255, 255, 0.2);
+      display: block;
+      width: 0;
+      z-index: 0;
+      left: -12px;
+      top: 5%;
+    }
+  }
+  #stats {
+    #headshotDiv {
+      #headshot {
+        z-index:5;
+        position: absolute;
+        right: 25px;
+        top: -75px;
+        width: 175px;
+        border-radius: 12px;
+        border: 5px solid $dark1;
+      }
+    }
+    #statsDiv {
+
+      #statsList {
+        font-size: 13px;
+        margin-left: 7%;
+        .stat {
+          padding: 8px 20px;
+          border-right: 2px solid rgba(34, 74, 111, 0.3);
+          p {
+            margin-bottom: 0;
+            text-align: center;
+          }
+
+        }
+        .stat:first-child {
+          border-left: 2px solid rgba(34, 74, 111, 0.3);
+
+        }
+      }
+    }
+  }
+  .content {
+    width: 95%;
+    min-width: 95%;
+    margin: 0 auto 0 0;
+    min-height:600px;
+  }
+}
+
+#resumeDoc {
+  margin-left:5%;
+  padding-top:40px;
+  padding-left:25px;
+  padding-right:10px;
+  background-image: url(../images/paper-backgound.png);
+  font-family: courier, monospace;
+  display:none;
+  h1, h2, h3, h4, h5, h6 {
+    font-family: courier, monospace;
+  }
+  h1 {
+    color: $primary;
+    font-size:1.75em;
+  }
+  h3{
+    font-size: 1.1em;
+    text-align: center;
+  }
+  h5 {
+    font-size:0.75em;
+  }
+  h6 {
+    font-size: 1em;
+  }
+  p, ul li {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+.moveLeft {
+  left:-120% !important;
+  transition:0.8s;
+  height: 0px;
+
+}
+.moveRight {
+  right:-120% !important;
+  transition:0.8s;
+  height: 0px;
+
+}
+.makeAbsolute {
+  position: absolute !important;
+}
+
+footer {
+  font-size:13px;
+  padding:12px 0px;
+  .contactTitle {
+    font-size:13px;
+    margin: 0 0 0 0;
+    padding: 12px 0 0 0;
+    color: white;
+
+  }
+  .contactInfo {
+    font-size:13px;
+    padding-bottom:12px;
+    margin: 0 0 0 0;
+    padding: 0 0 12px 0;
+    a {
+      color: lighten($blue, 10%);
+    }
+
+  }
+}
+/* Thank you to Sebastiano Guerriero for inspiration: http://codyhouse.co/gem/vertical-timeline/
+////////////////////////////////////////////////////////////////////////////////////////////////// */
+#cd-timeline {
+  background-color: rgba(225, 225, 225, 0.75);
+  position: relative;
+  left:0%;
+  max-width:100%;
+  padding: 0 0 2em 0;
+  margin-bottom: 2em;
+  padding-bottom:0;
+  transition:left 0.8s ease;
+
+  .timeCard {
+    display: block;
+    position: relative;
+    .cd-timeline-content {
+      padding:10px;
+      h2 {
+        font-family:courier, monospace;
+        font-size: 1.1em;
+      }
+      p {
+        color: grey;
+        text-align: left;
+        margin-bottom:0;
+        font-family:courier, monospace;
+        line-height: 1.1;
+      }
+      span {
+        font-size: 12px;
+        color: lightgrey;
+        text-shadow: 1px 1px grey;
+      }
+    }
+    .cd-timeline-img {
+      position: absolute;
+      left: 50%;
+      span {
+        position: absolute;
+        left: -18px;
+        border: 4px solid white;
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        color: white;
+        i {
+          padding-top:10px;
+        }
+      }
+    }
+  }
+  .timeCard:nth-child(2n+1) {
+    text-align: right;
+
+    .cd-timeline-img {
+      span {
+        background-color: $primary;
+      }
+    }
+
+    .cd-timeline-content {
+      width: 45%;
+      display: inline-block;
+      background-color: white;
+//      -webkit-box-shadow: -1px -1px 5px 0px rgba(0,0,0,0.75);
+//      -moz-box-shadow: -1px -1px 5px 0px rgba(0,0,0,0.75);
+//      box-shadow: -1px -1px 5px 0px rgba(0,0,0,0.75);
+      h2 {
+        color: $primary;
+        text-align: center;
+        border-bottom: 1px solid grey;
+      }
+      p {
+        padding: 10px;
+      }
+    }
+  }
+  .timeCard:nth-child(n+2) {
+    margin-top: 15px;
+  }
+  .timeCard:nth-child(2n) {
+
+    .cd-timeline-img {
+      span {
+        background-color: $secondary;
+      }
+    }
+
+    .cd-timeline-content {
+      width: 45%;
+      display: inline-block;
+      background-color: white;
+      //      -webkit-box-shadow: -1px -1px 5px 0px rgba(0,0,0,0.75);
+      //      -moz-box-shadow: -1px -1px 5px 0px rgba(0,0,0,0.75);
+      //      box-shadow: -1px -1px 5px 0px rgba(0,0,0,0.75);
+      h2 {
+        color: $secondary;
+        text-align: center;
+        border-bottom: 1px solid grey;
+      }
+      p {
+        padding: 10px;
+      }
+    }
+  }
+  .timeCard:nth-child(n+2) {
+    margin-top: 15px;
+  }
+}
+#cd-timeline::before {
+  /* this is the vertical line */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 4px;
+  background: white;
+}
+
+//.cssanimations .cd-timeline-img.is-hidden {
+//  visibility: hidden;
+//}
+//.cssanimations .cd-timeline-img .bounce-in {
+//  visibility: visible;
+//  animation: cd-bounce-1 0.6s;
+//}
+
+.bounce-in {
+  visibility: visible;
+  animate: trial 0.6s;
+  -webkit-animation: trial 0.6s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes trial {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes cd-bounce-1 {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ng-View Design
+///////////////////// */
 
 
 /* Responsive Design
 ///////////////////////////////////////////////////////////////// */
+
+@import 'x-small';
+
 
 @import 'small';
 
