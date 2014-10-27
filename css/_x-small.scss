@@ -1,14 +1,80 @@
 @media screen and (min-width: 200px) and (max-width : 500px){
-  .thing {
-    color: blue;
+  body {
+    .container {
+      #portfolioDoc {
+        margin-top:10px;
+      }
+      .huh {
+        padding: 0;
+      }
+      .content {
+        width: 100%;
+        margin-right: 0;
+      }
+      footer .row {
+        margin-bottom: 28px;
+      }
+    }
+  }
+  body #social-bar {
+    display: none;
+  }
+  #social-bar-fixed {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left:0px;
+    z-index:501;
+    li {
+      width:20%;
+      display: inline-block;
+      padding: 8px 0px;
+      text-align: center;
+      background-color: $blue;
+
+      a {
+        color: white;
+      }
+    }
   }
 
-  #contactSub {
-    max-height: 130px;
+  .container #banner {
+    width: 100%;
+    overflow-x: hidden;
+    img {
+      min-height: 267px;
+      min-width: 1015px;
+      margin-left:-250px;
+
+    }
+    .bubble {
+      background: rgba(255, 255, 255, 0.6);
+      font-size: 13px;
+      max-width:45%;
+      right: 5px;
+      top:10px;
+      line-height: 1.2;
+    }
   }
 
-  .mobileSideImage {
-    min-height: 225px;
+  .container #stats {
+    #statsDiv {
+      width: 100%;
+      #statsList {
+        margin-left:0;
+        li {
+          font-size: 12px;
+          text-align: center;
+          width: 24%;
+        }
+      }
+    }
+    #headshotDiv {
+      width:0%;
+      #headshot {
+        display: none;
+      }
+    }
   }
 
 }

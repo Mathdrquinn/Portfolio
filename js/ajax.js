@@ -33,9 +33,9 @@ $.ajax({
         console.log('got in git ajax');
         console.log(response);
         gitData = response;
-//        setRepos(gitData);
-//        checkJs(gitData, gitUrl);
-//        checkCommits(gitData, gitUrl);
+        setRepos(gitData);
+        checkJs(gitData, gitUrl);
+        checkCommits(gitData, gitUrl);
     }
 });
 

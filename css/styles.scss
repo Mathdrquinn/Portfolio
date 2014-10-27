@@ -416,7 +416,7 @@ body {
   .top-bar {
     position: fixed;
     width:100%;
-    z-index:5;
+    z-index:50;
     height: 47px;
     .padding-wide {
       padding: 0px 35px !important;
@@ -516,7 +516,11 @@ nav {
 .container {
   width: 100%;
   min-width: 100%;
+  .sprawl {
+    z-index:45;
+  }
   #banner {
+    z-index:48;
     position: relative;
     margin-top:47px;
     img {
@@ -566,9 +570,10 @@ nav {
     }
   }
   #stats {
+    z-index:49;
     #headshotDiv {
       #headshot {
-        z-index:5;
+        z-index:49;
         position: absolute;
         right: 25px;
         top: -75px;
@@ -606,14 +611,93 @@ nav {
   }
 }
 
+#portfolioDoc {
+  margin-top: 50px;
+  position: absolute;
+  top: -200%;
+  transition: 0.6s ease;
+  visibility: hidden;
+  .projectCard {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 8px;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    a {
+      img {
+        width: 100%;
+      }
+    }
+    .contentHolder {
+      position: relative;
+      h5 {
+        margin-bottom:0px;
+        line-height:1.2;
+        font-size:18px;
+        margin-right: 80px;
+      }
+      p {
+        margin-right: 80px;
+        font-size: 13px;
+
+      }
+      span {
+        transition: 0.3s;
+        a {
+          position: absolute;
+          top: 5px;
+          right: 10px;
+          color: lightgray;
+          width: 30px;
+          height: 30px;
+          transition: 0.3s;
+          i {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+      span:hover {
+        a {
+          color: grey;
+          right: 5px;
+        }
+      }
+    }
+  }
+  .fadeable {
+    opacity: 0.7;
+    transition: 0.3s;
+  }
+  .fade {
+    opacity: 1;
+    -webkit-box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.75);
+  }
+}
+
+.moveDown {
+  top: 0px !important;
+  visibility: visible !important;
+}
+.makeRelative {
+  position: relative !important;
+}
+
 #resumeDoc {
+  z-index:4;
   margin-left:5%;
   padding-top:40px;
   padding-left:25px;
   padding-right:10px;
   background-image: url(../images/paper-backgound.png);
   font-family: courier, monospace;
-  display:none;
+  position: absolute;
+  top: -2000px;
+  transition: 2.6s ease;
+  visibility: hidden;
   h1, h2, h3, h4, h5, h6 {
     font-family: courier, monospace;
   }

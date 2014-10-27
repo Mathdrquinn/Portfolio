@@ -427,7 +427,7 @@ body {
   body .top-bar {
     position: fixed;
     width: 100%;
-    z-index: 5;
+    z-index: 50;
     height: 47px; }
     body .top-bar .padding-wide {
       padding: 0px 35px !important; }
@@ -495,7 +495,10 @@ nav .top-bar-section .right li .bottom-border {
 .container {
   width: 100%;
   min-width: 100%; }
+  .container .sprawl {
+    z-index: 45; }
   .container #banner {
+    z-index: 48;
     position: relative;
     margin-top: 47px;
     /* Thanks to: http://ilikepixels.co.uk/drop/bubbler/ with help on making the quote bubble!!! */ }
@@ -532,39 +535,102 @@ nav .top-bar-section .right li .bottom-border {
       z-index: 0;
       left: -12px;
       top: 5%; }
-  .container #stats #headshotDiv #headshot {
-    z-index: 5;
-    position: absolute;
-    right: 25px;
-    top: -75px;
-    width: 175px;
-    border-radius: 12px;
-    border: 5px solid #303A3B; }
-  .container #stats #statsDiv #statsList {
-    font-size: 13px;
-    margin-left: 7%; }
-    .container #stats #statsDiv #statsList .stat {
-      padding: 8px 20px;
-      border-right: 2px solid rgba(34, 74, 111, 0.3); }
-      .container #stats #statsDiv #statsList .stat p {
-        margin-bottom: 0;
-        text-align: center; }
-    .container #stats #statsDiv #statsList .stat:first-child {
-      border-left: 2px solid rgba(34, 74, 111, 0.3); }
+  .container #stats {
+    z-index: 49; }
+    .container #stats #headshotDiv #headshot {
+      z-index: 49;
+      position: absolute;
+      right: 25px;
+      top: -75px;
+      width: 175px;
+      border-radius: 12px;
+      border: 5px solid #303A3B; }
+    .container #stats #statsDiv #statsList {
+      font-size: 13px;
+      margin-left: 7%; }
+      .container #stats #statsDiv #statsList .stat {
+        padding: 8px 20px;
+        border-right: 2px solid rgba(34, 74, 111, 0.3); }
+        .container #stats #statsDiv #statsList .stat p {
+          margin-bottom: 0;
+          text-align: center; }
+      .container #stats #statsDiv #statsList .stat:first-child {
+        border-left: 2px solid rgba(34, 74, 111, 0.3); }
   .container .content {
     width: 95%;
     min-width: 95%;
     margin: 0 auto 0 0;
     min-height: 600px; }
 
+#portfolioDoc {
+  margin-top: 50px;
+  position: absolute;
+  top: -200%;
+  transition: 0.6s ease;
+  visibility: hidden; }
+  #portfolioDoc .projectCard {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 8px;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto; }
+    #portfolioDoc .projectCard a img {
+      width: 100%; }
+    #portfolioDoc .projectCard .contentHolder {
+      position: relative; }
+      #portfolioDoc .projectCard .contentHolder h5 {
+        margin-bottom: 0px;
+        line-height: 1.2;
+        font-size: 18px;
+        margin-right: 80px; }
+      #portfolioDoc .projectCard .contentHolder p {
+        margin-right: 80px;
+        font-size: 13px; }
+      #portfolioDoc .projectCard .contentHolder span {
+        transition: 0.3s; }
+        #portfolioDoc .projectCard .contentHolder span a {
+          position: absolute;
+          top: 5px;
+          right: 10px;
+          color: lightgray;
+          width: 30px;
+          height: 30px;
+          transition: 0.3s; }
+          #portfolioDoc .projectCard .contentHolder span a i {
+            width: 30px;
+            height: 30px; }
+      #portfolioDoc .projectCard .contentHolder span:hover a {
+        color: grey;
+        right: 5px; }
+  #portfolioDoc .fadeable {
+    opacity: 0.7;
+    transition: 0.3s; }
+  #portfolioDoc .fade {
+    opacity: 1;
+    -webkit-box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.75); }
+
+.moveDown {
+  top: 0px !important;
+  visibility: visible !important; }
+
+.makeRelative {
+  position: relative !important; }
+
 #resumeDoc {
+  z-index: 4;
   margin-left: 5%;
   padding-top: 40px;
   padding-left: 25px;
   padding-right: 10px;
   background-image: url(../images/paper-backgound.png);
   font-family: courier, monospace;
-  display: none; }
+  position: absolute;
+  top: -2000px;
+  transition: 2.6s ease;
+  visibility: hidden; }
   #resumeDoc h1, #resumeDoc h2, #resumeDoc h3, #resumeDoc h4, #resumeDoc h5, #resumeDoc h6 {
     font-family: courier, monospace; }
   #resumeDoc h1 {
@@ -723,20 +789,105 @@ footer {
 /* Responsive Design
 ///////////////////////////////////////////////////////////////// */
 @media screen and (min-width: 200px) and (max-width: 500px) {
-  .thing {
-    color: blue; }
+  body .container #portfolioDoc {
+    margin-top: 10px; }
+  body .container .huh {
+    padding: 0; }
+  body .container .content {
+    width: 100%;
+    margin-right: 0; }
+  body .container footer .row {
+    margin-bottom: 28px; }
 
-  #contactSub {
-    max-height: 130px; }
+  body #social-bar {
+    display: none; }
 
-  .mobileSideImage {
-    min-height: 225px; } }
+  #social-bar-fixed {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 501; }
+    #social-bar-fixed li {
+      width: 20%;
+      display: inline-block;
+      padding: 8px 0px;
+      text-align: center;
+      background-color: #1F4A6F; }
+      #social-bar-fixed li a {
+        color: white; }
+
+  .container #banner {
+    width: 100%;
+    overflow-x: hidden; }
+    .container #banner img {
+      min-height: 267px;
+      min-width: 1015px;
+      margin-left: -250px; }
+    .container #banner .bubble {
+      background: rgba(255, 255, 255, 0.6);
+      font-size: 13px;
+      max-width: 45%;
+      right: 5px;
+      top: 10px;
+      line-height: 1.2; }
+
+  .container #stats #statsDiv {
+    width: 100%; }
+    .container #stats #statsDiv #statsList {
+      margin-left: 0; }
+      .container #stats #statsDiv #statsList li {
+        font-size: 12px;
+        text-align: center;
+        width: 24%; }
+  .container #stats #headshotDiv {
+    width: 0%; }
+    .container #stats #headshotDiv #headshot {
+      display: none; } }
 @media screen and (min-width: 500px) and (max-width: 704px) {
-  .thing {
-    color: pink; } }
+  body .container footer .row {
+    margin-bottom: 28px; }
+
+  body #social-bar {
+    display: none; }
+
+  #social-bar-fixed {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 501; }
+    #social-bar-fixed li {
+      width: 20%;
+      display: inline-block;
+      padding: 8px 0px;
+      text-align: center;
+      background-color: #1F4A6F; }
+      #social-bar-fixed li a {
+        color: white; }
+
+  .container #banner .bubble {
+    font-size: 13px;
+    max-width: 50%;
+    right: 5px;
+    top: 10px;
+    line-height: 1.2; }
+
+  .container #stats #statsDiv {
+    width: 100%; }
+    .container #stats #statsDiv #statsList {
+      margin-left: 0; }
+      .container #stats #statsDiv #statsList li {
+        font-size: 12px;
+        text-align: center;
+        width: 24%; }
+  .container #stats #headshotDiv {
+    width: 0%; }
+    .container #stats #headshotDiv #headshot {
+      display: none; } }
 @media screen and (min-width: 705px) and (max-width: 1125px) {
-  .thing {
-    color: purple; } }
+  body #social-bar {
+    left: 93%; } }
 /* Large devices (large desktops, 1126px and up) */
 @media all and (min-width: 1126px) {
   .thing {

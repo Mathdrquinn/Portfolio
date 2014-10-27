@@ -31,16 +31,83 @@ $(document).ready(function () {
 
     $(".top-bar").on('click', '#resume', function (e) {
         e.preventDefault();
-        $('#cd-timeline').addClass('makeAbsolute');
-        $('#cd-timeline').addClass('moveLeft');
 
-        $('#blog').addClass('makeAbsolute');
-        $('#blog').addClass('moveRight');
+        if($('#cd-timeline').hasClass('inplace')) {
+            $('#cd-timeline').addClass('makeAbsolute').addClass('moveLeft').removeClass('inplace');
 
-        $('#projects').addClass('makeAbsolute');
-        $('#projects').addClass('moveRight');
+            $('#blog').addClass('makeAbsolute').addClass('moveRight').removeClass('inplace');
 
-        $('#resumeDoc').slideDown(3000);
+            $('#projects').addClass('makeAbsolute').addClass('moveRight').removeClass('inplace');
+        }
+
+        if($('#portfolioDoc').hasClass('inplace')) {
+            $('#portfolioDoc').removeClass('moveDown').removeClass('makeRelative').removeClass('inplace');
+        }
+
+        setTimeout(function() {
+            $('#resumeDoc').addClass('moveDown').addClass('inplace');
+
+            setTimeout(function() {
+                $('#resumeDoc').addClass('makeRelative')
+            }, 300);
+        }, 500);
+
     })
 
+    $(".top-bar").on('click', '#portfolio', function (e) {
+        e.preventDefault();
+
+        if($('#cd-timeline').hasClass('inplace')) {
+            $('#cd-timeline').addClass('makeAbsolute').addClass('moveLeft').removeClass('inplace');
+
+            $('#blog').addClass('makeAbsolute').addClass('moveRight').removeClass('inplace');
+
+            $('#projects').addClass('makeAbsolute').addClass('moveRight').removeClass('inplace');
+        }
+
+        if($('#resumeDoc').hasClass('inplace')) {
+            $('#resumeDoc').removeClass('moveDown').removeClass('makeRelative').removeClass('inplace');
+        }
+
+        setTimeout(function() {
+            $('#portfolioDoc').addClass('moveDown').addClass('inplace');
+
+            setTimeout(function() {
+                $('#portfolioDoc').addClass('makeRelative')
+            }, 300);
+        }, 500);
+    })
+
+    $(".top-bar").on('click', '#nameTag', function (e) {
+        e.preventDefault();
+
+        if($('#portfolioDoc').hasClass('inplace')) {
+            $('#portfolioDoc').removeClass('moveDown').removeClass('makeRelative').removeClass('inplace');
+        }
+
+        if($('#resumeDoc').hasClass('inplace')) {
+            $('#resumeDoc').removeClass('moveDown').removeClass('makeRelative').removeClass('inplace');
+        }
+
+        setTimeout(function() {
+            $('#cd-timeline').removeClass('moveLeft').removeClass('makeAbsolute').addClass('inplace');
+
+            $('#blog').removeClass('moveRight').removeClass('makeAbsolute').addClass('inplace');
+
+            $('#projects').removeClass('moveRight').removeClass('makeAbsolute').addClass('inplace');
+        }, 800);
+    })
+
+    $('#portfolioDoc').on('mouseenter', '.projectCard', function () {
+        console.log('mouseenter');
+        $(this).addClass('fade');
+    })
+    $('#portfolioDoc').on('mouseleave', '.projectCard', function () {
+        console.log('mouseLeave');
+        $(this).removeClass('fade');
+    })
 })
+
+function addMoveDown(obj) {
+    $(obj).addClass('moveDown');
+}

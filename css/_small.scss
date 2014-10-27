@@ -1,10 +1,59 @@
 @media screen and (min-width: 500px) and (max-width : 704px){
-  .thing {
-    color: pink;
+  body {
+    .container {
+      footer .row {
+        margin-bottom: 28px;
+      }
+    }
+  }
+  body #social-bar {
+    display: none;
+  }
+  #social-bar-fixed {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left:0px;
+    z-index:501;
+    li {
+      width:20%;
+      display: inline-block;
+      padding: 8px 0px;
+      text-align: center;
+      background-color: $blue;
+
+      a {
+        color: white;
+      }
+    }
   }
 
-  #contactSub {
-
+  .container #banner .bubble {
+    font-size: 13px;
+    max-width:50%;
+    right: 5px;
+    top:10px;
+    line-height: 1.2;
   }
 
+  .container #stats {
+    #statsDiv {
+      width: 100%;
+      #statsList {
+        margin-left:0;
+        li {
+          font-size: 12px;
+          text-align: center;
+          width: 24%;
+        }
+      }
+    }
+    #headshotDiv {
+      width:0%;
+      #headshot {
+        display: none;
+      }
+    }
+  }
 }
+
