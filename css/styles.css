@@ -784,8 +784,9 @@ footer {
     transform: scale(1.2); }
   100% {
     transform: scale(1); } }
-/* ng-View Design
-///////////////////// */
+#social-bar-fixed {
+  display: none; }
+
 /* Responsive Design
 ///////////////////////////////////////////////////////////////// */
 @media screen and (min-width: 200px) and (max-width: 500px) {
@@ -852,6 +853,7 @@ footer {
     display: none; }
 
   #social-bar-fixed {
+    display: block;
     width: 100%;
     position: fixed;
     bottom: 0px;
