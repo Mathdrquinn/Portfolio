@@ -1,6 +1,13 @@
 @media screen and (min-width: 200px) and (max-width : 500px){
   body {
     .container {
+      .content {
+        width: 100%;
+        margin: 0;
+        #cd-timeline {
+          margin-right: 0;
+        }
+      }
       #portfolioDoc {
         margin-top:10px;
       }
@@ -20,6 +27,7 @@
     display: none;
   }
   #social-bar-fixed {
+    display:block;
     width: 100%;
     position: fixed;
     bottom: 0px;
@@ -75,6 +83,34 @@
         display: none;
       }
     }
+  }
+  
+  #portfolioDoc .fadeable {
+    opacity: 1.0;
+  }
+
+  .ribbon {
+    margin:0;
+  }
+  .ribbon:after {
+    display: none;
+    left:0px;
+  }
+  .ribbon:after {
+    display: none;
+    left:0px;
+  }
+  .ribbon .ribbon-content:after {
+    display: none;
+    left:0px;
+  }
+  .ribbon .ribbon-content:after {
+    display: none;
+    left:0px;
+  }
+
+  #resume, #portfolio, #nameTag, #github {
+    line-height: 3.5;
   }
 
 }

@@ -33,19 +33,19 @@ $(document).ready(function () {
         e.preventDefault();
 
         if($('#cd-timeline').hasClass('inplace')) {
-            $('#cd-timeline').addClass('makeAbsolute').addClass('moveLeft').removeClass('inplace');
+            $('#cd-timeline').addClass('makeAbsolute').addClass('moveLeft').removeClass('inplace').fadeOut(400);
 
-            $('#blog').addClass('makeAbsolute').addClass('moveRight').removeClass('inplace');
+            $('#blog').addClass('makeAbsolute').addClass('moveRight').removeClass('inplace').fadeOut(400);
 
-            $('#projects').addClass('makeAbsolute').addClass('moveRight').removeClass('inplace');
+            $('#projects').addClass('makeAbsolute').addClass('moveRight').removeClass('inplace').fadeOut(400);
         }
 
         if($('#portfolioDoc').hasClass('inplace')) {
-            $('#portfolioDoc').removeClass('moveDown').removeClass('makeRelative').removeClass('inplace');
+            $('#portfolioDoc').removeClass('moveDown').removeClass('makeRelative').removeClass('inplace').fadeOut(400);
         }
 
         setTimeout(function() {
-            $('#resumeDoc').addClass('moveDown').addClass('inplace');
+            $('#resumeDoc').addClass('moveDown').addClass('inplace').fadeIn();
 
             setTimeout(function() {
                 $('#resumeDoc').addClass('makeRelative')
@@ -58,19 +58,19 @@ $(document).ready(function () {
         e.preventDefault();
 
         if($('#cd-timeline').hasClass('inplace')) {
-            $('#cd-timeline').addClass('makeAbsolute').addClass('moveLeft').removeClass('inplace');
+            $('#cd-timeline').addClass('makeAbsolute').addClass('moveLeft').removeClass('inplace').fadeOut(400);
 
-            $('#blog').addClass('makeAbsolute').addClass('moveRight').removeClass('inplace');
+            $('#blog').addClass('makeAbsolute').addClass('moveRight').removeClass('inplace').fadeOut(400);
 
-            $('#projects').addClass('makeAbsolute').addClass('moveRight').removeClass('inplace');
+            $('#projects').addClass('makeAbsolute').addClass('moveRight').removeClass('inplace').fadeOut(400);
         }
 
         if($('#resumeDoc').hasClass('inplace')) {
-            $('#resumeDoc').removeClass('moveDown').removeClass('makeRelative').removeClass('inplace');
+            $('#resumeDoc').removeClass('moveDown').removeClass('makeRelative').removeClass('inplace').fadeOut(400);
         }
 
         setTimeout(function() {
-            $('#portfolioDoc').addClass('moveDown').addClass('inplace');
+            $('#portfolioDoc').addClass('moveDown').addClass('inplace').fadeIn();
 
             setTimeout(function() {
                 $('#portfolioDoc').addClass('makeRelative')
@@ -82,19 +82,19 @@ $(document).ready(function () {
         e.preventDefault();
 
         if($('#portfolioDoc').hasClass('inplace')) {
-            $('#portfolioDoc').removeClass('moveDown').removeClass('makeRelative').removeClass('inplace');
+            $('#portfolioDoc').removeClass('moveDown').removeClass('makeRelative').removeClass('inplace').fadeOut(400);
         }
 
         if($('#resumeDoc').hasClass('inplace')) {
-            $('#resumeDoc').removeClass('moveDown').removeClass('makeRelative').removeClass('inplace');
+            $('#resumeDoc').removeClass('moveDown').removeClass('makeRelative').removeClass('inplace').fadeOut(400);
         }
 
         setTimeout(function() {
-            $('#cd-timeline').removeClass('moveLeft').removeClass('makeAbsolute').addClass('inplace');
+            $('#cd-timeline').removeClass('moveLeft').removeClass('makeAbsolute').addClass('inplace').fadeIn(400);
 
-            $('#blog').removeClass('moveRight').removeClass('makeAbsolute').addClass('inplace');
+            $('#blog').removeClass('moveRight').removeClass('makeAbsolute').addClass('inplace').fadeIn(400);
 
-            $('#projects').removeClass('moveRight').removeClass('makeAbsolute').addClass('inplace');
+            $('#projects').removeClass('moveRight').removeClass('makeAbsolute').addClass('inplace').fadeIn(400);
         }, 800);
     })
 

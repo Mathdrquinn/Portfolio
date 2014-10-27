@@ -36,10 +36,6 @@
   border-color: darken($secondary, 20%) transparent transparent transparent;
   bottom: -1em;
 }
-.ribbon{
-  left: 0;
-  border-width: 1em 0 0 1em;
-}
 .ribbon .ribbon-content:after {
   right: 0;
   border-width: 1em 1em 0 0;

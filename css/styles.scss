@@ -394,6 +394,9 @@ a:hover {
 ///////////////////////////////////////////////////////////////// */
 
 body {
+  .huh {
+    padding: 0;
+  }
   background-image: url(../images/congruent_pentagon.png);
   #social-bar {
     left: 95%;
@@ -723,13 +726,11 @@ nav {
 .moveLeft {
   left:-120% !important;
   transition:0.8s;
-  height: 0px;
 
 }
 .moveRight {
   right:-120% !important;
   transition:0.8s;
-  height: 0px;
 
 }
 .makeAbsolute {
@@ -860,6 +861,12 @@ footer {
       }
       p {
         padding: 10px;
+      }
+      a {
+        margin-left: 10px;
+        span {
+          margin-left:10px;
+        }
       }
     }
   }

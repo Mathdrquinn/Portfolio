@@ -35,10 +35,6 @@
   border-color: #003536 transparent transparent transparent;
   bottom: -1em; }
 
-.ribbon {
-  left: 0;
-  border-width: 1em 0 0 1em; }
-
 .ribbon .ribbon-content:after {
   right: 0;
   border-width: 1em 1em 0 0; }
@@ -410,6 +406,8 @@ a:hover {
 ///////////////////////////////////////////////////////////////// */
 body {
   background-image: url(../images/congruent_pentagon.png); }
+  body .huh {
+    padding: 0; }
   body #social-bar {
     left: 95%;
     width: 60px;
@@ -649,13 +647,11 @@ nav .top-bar-section .right li .bottom-border {
 
 .moveLeft {
   left: -120% !important;
-  transition: 0.8s;
-  height: 0px; }
+  transition: 0.8s; }
 
 .moveRight {
   right: -120% !important;
-  transition: 0.8s;
-  height: 0px; }
+  transition: 0.8s; }
 
 .makeAbsolute {
   position: absolute !important; }
@@ -747,6 +743,10 @@ footer {
       border-bottom: 1px solid grey; }
     #cd-timeline .timeCard:nth-child(2n) .cd-timeline-content p {
       padding: 10px; }
+    #cd-timeline .timeCard:nth-child(2n) .cd-timeline-content a {
+      margin-left: 10px; }
+      #cd-timeline .timeCard:nth-child(2n) .cd-timeline-content a span {
+        margin-left: 10px; }
   #cd-timeline .timeCard:nth-child(n+2) {
     margin-top: 15px; }
 
@@ -790,6 +790,11 @@ footer {
 /* Responsive Design
 ///////////////////////////////////////////////////////////////// */
 @media screen and (min-width: 200px) and (max-width: 500px) {
+  body .container .content {
+    width: 100%;
+    margin: 0; }
+    body .container .content #cd-timeline {
+      margin-right: 0; }
   body .container #portfolioDoc {
     margin-top: 10px; }
   body .container .huh {
@@ -804,6 +809,7 @@ footer {
     display: none; }
 
   #social-bar-fixed {
+    display: block;
     width: 100%;
     position: fixed;
     bottom: 0px;
@@ -844,8 +850,38 @@ footer {
   .container #stats #headshotDiv {
     width: 0%; }
     .container #stats #headshotDiv #headshot {
-      display: none; } }
+      display: none; }
+
+  #portfolioDoc .fadeable {
+    opacity: 1.0; }
+
+  .ribbon {
+    margin: 0; }
+
+  .ribbon:after {
+    display: none;
+    left: 0px; }
+
+  .ribbon:after {
+    display: none;
+    left: 0px; }
+
+  .ribbon .ribbon-content:after {
+    display: none;
+    left: 0px; }
+
+  .ribbon .ribbon-content:after {
+    display: none;
+    left: 0px; }
+
+  #resume, #portfolio, #nameTag, #github {
+    line-height: 3.5; } }
 @media screen and (min-width: 500px) and (max-width: 704px) {
+  body .container .content {
+    width: 100%;
+    margin: 0; }
+    body .container .content #cd-timeline {
+      margin-right: 0; }
   body .container footer .row {
     margin-bottom: 28px; }
 
@@ -886,7 +922,29 @@ footer {
   .container #stats #headshotDiv {
     width: 0%; }
     .container #stats #headshotDiv #headshot {
-      display: none; } }
+      display: none; }
+
+  .ribbon {
+    margin: 0; }
+
+  .ribbon:after {
+    display: none;
+    left: 0px; }
+
+  .ribbon:after {
+    display: none;
+    left: 0px; }
+
+  .ribbon .ribbon-content:after {
+    display: none;
+    left: 0px; }
+
+  .ribbon .ribbon-content:after {
+    display: none;
+    left: 0px; }
+
+  #resume, #portfolio, #nameTag, #github {
+    line-height: 3.5; } }
 @media screen and (min-width: 705px) and (max-width: 1125px) {
   body #social-bar {
     left: 93%; } }

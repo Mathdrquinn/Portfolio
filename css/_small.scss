@@ -1,6 +1,13 @@
 @media screen and (min-width: 500px) and (max-width : 704px){
   body {
     .container {
+      .content {
+        width: 100%;
+        margin:0;
+        #cd-timeline {
+          margin-right: 0;
+        }
+      }
       footer .row {
         margin-bottom: 28px;
       }
@@ -56,5 +63,30 @@
       }
     }
   }
+
+  .ribbon {
+    margin:0;
+  }
+  .ribbon:after {
+    display: none;
+    left:0px;
+  }
+  .ribbon:after {
+    display: none;
+    left:0px;
+  }
+  .ribbon .ribbon-content:after {
+    display: none;
+    left:0px;
+  }
+  .ribbon .ribbon-content:after {
+    display: none;
+    left:0px;
+  }
+
+  #resume, #portfolio, #nameTag, #github {
+    line-height: 3.5;
+  }
+
 }
 
